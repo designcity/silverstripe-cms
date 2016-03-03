@@ -94,13 +94,13 @@ en:
     DUPLICATEDWITHCHILDREN: 'Duplicated ''{title}'' and children successfully'
     EMAIL: Email
     EditTree: 'Edit Tree'
-    ListFiltered: 'Filtered list.'
+    ListFiltered: 'Showing search results.'
     MENUTITLE: 'Edit Page'
     NEWPAGE: 'New {pagetype}'
     PAGENOTEXISTS: 'This page doesn''t exist'
-    PAGES: Pages
+    PAGES: 'Page status'
     PAGETYPEANYOPT: Any
-    PAGETYPEOPT: 'Page Type'
+    PAGETYPEOPT: 'Page type'
     PUBALLCONFIRM: 'Please publish every page in the site, copying content stage to live'
     PUBALLFUN: '"Publish All" functionality'
     PUBALLFUN2: "Pressing this button will do the equivalent of going to every page and pressing \"publish\".  It's\n				intended to be used after there have been massive edits of the content, such as when the site was\n				first built."
@@ -122,11 +122,11 @@ en:
     TabContent: Content
     TabHistory: History
     TabSettings: Settings
-    TreeFiltered: 'Filtered tree.'
-    TreeFilteredClear: 'Clear filter'
+    TreeFiltered: 'Showing search results.'
+    TreeFilteredClear: Clear
   CMSMain_left_ss:
-    APPLY_FILTER: 'Apply Filter'
-    CLEAR_FILTER: 'Clear Filter'
+    APPLY_FILTER: Search
+    CLEAR_FILTER: Clear
     RESET: Reset
   CMSPageAddController:
     MENUTITLE: 'Add page'
@@ -159,7 +159,7 @@ en:
     MENUTITLE: Pages
     TreeView: 'Tree View'
   CMSPagesController_ContentToolbar_ss:
-    MULTISELECT: Multi-selection
+    MULTISELECT: 'Batch actions'
   CMSPagesController_Tools_ss:
     FILTER: Filter
   CMSSIteTreeFilter_PublishedPages:
@@ -168,7 +168,8 @@ en:
     FILTERDATEFROM: From
     FILTERDATEHEADING: Date
     FILTERDATETO: To
-    FILTERLABELTEXT: Content
+    FILTERLABELTEXT: Search
+    PAGEFILTERDATEHEADING: 'Last edited'
   CMSSettingsController:
     MENUTITLE: Settings
   CMSSiteTreeFilter_ChangedPages:
@@ -243,6 +244,8 @@ en:
     ERRORFILEPROBLEM: 'Error opening file "{filename}" for writing. Please check file permissions.'
     PLURALNAME: 'Error Pages'
     SINGULARNAME: 'Error Page'
+  File:
+    Title: Title
   Folder:
     AddFolderButton: 'Add folder'
     DELETEUNUSEDTHUMBNAILS: 'Delete unused thumbnails'

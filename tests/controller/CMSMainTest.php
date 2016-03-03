@@ -397,9 +397,9 @@ class CMSMainTest extends FunctionalTest {
 		$crumbs = $parser->getBySelector('.breadcrumbs-wrapper .crumb');
 
 		$this->assertNotNull($crumbs);
-		$this->assertEquals(3, count($crumbs));
-		$this->assertEquals('Page 3', (string)$crumbs[1]);
-		$this->assertEquals('Page 3.1', (string)$crumbs[2]);
+		$this->assertEquals(2, count($crumbs));
+		$this->assertEquals('Page 3', (string)$crumbs[0]);
+		$this->assertEquals('Page 3.1', (string)$crumbs[1]);
 
 		$this->session()->inst_set('loggedInAs', null);
 	}
