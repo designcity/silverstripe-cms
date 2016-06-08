@@ -12,7 +12,7 @@ addons:
 
 env:
   global:
-    - CORE_RELEASE=3.3
+    - CORE_RELEASE=3.2
     - "ARTIFACTS_AWS_REGION=us-east-1"
     - "ARTIFACTS_S3_BUCKET=silverstripe-travis-artifacts"
     - secure: "7V20Qk3bIG2AlTJaA5D/uzB8vUVvRwQp+xjRYUxlahtj9FcuqEV3HIyjwwJe0T6Z1bnRYuu28ZnCT2CfP9BBZ3FE7AwSZbPase9c0/at2qDJNqkvIdC1xZ1H6Fcy2LSwNB9wLQPe613ItVdanitEuwE41iowxBPslxUUTnwx7eY="
@@ -34,7 +34,6 @@ matrix:
 before_script:
  - composer self-update || true
  - phpenv rehash
- - phpenv config-rm xdebug.ini
  - git clone git://github.com/silverstripe-labs/silverstripe-travis-support.git ~/travis-support
  - "if [ \"$BEHAT_TEST\" = \"\" ]; then php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss; fi"
  - "if [ \"$BEHAT_TEST\" = \"1\" ]; then php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss --require silverstripe/behat-extension; fi"
